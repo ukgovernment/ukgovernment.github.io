@@ -1,22 +1,37 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+  import { RouterLink, RouterView } from 'vue-router'
+  import MainNavBar from './components/MainNavBar.vue'
+
+  import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+
+  <div class="wholeScreenContainer mx-auto">
+
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <MainNavBar></MainNavBar>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+      <!-- might be useful later
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
+        </nav>
+      </div>
+      -->
+    </header>
 
-  <RouterView />
+    <RouterView />
+
+  </div>
+
 </template>
 
+<style scoped>
+
+.wholeScreenContainer {
+  max-width: 80vw;
+}
+</style>
