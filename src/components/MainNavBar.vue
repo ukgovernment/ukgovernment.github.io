@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow nav-gradient">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,3 +35,10 @@
     </div>
   </nav>
 </template>
+
+<style scoped>
+.nav-gradient {
+  background: rgb(167,1,1); 
+  background: linear-gradient(45deg, rgba(167,1,1,1) 0%, rgba(247,6,4,1) 100%);
+}
+</style>

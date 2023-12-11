@@ -32,6 +32,6 @@
 <style scoped>
 
 .wholeScreenContainer {
-  max-width: 80vw;
+  max-width: 100vh;
 }
 </style>
