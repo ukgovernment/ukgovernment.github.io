@@ -28,9 +28,9 @@
               Dropdown link
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Action</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Another action</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Something else here</a></li>
             </ul>
           </li>
         </ul>
@@ -43,14 +43,15 @@
 
 /* main nav colour and gradient */
 .nav-gradient {
-  background: rgb(167,1,1); 
-  background: linear-gradient(45deg, rgba(167,1,1,1) 0%, rgba(247,6,4,1) 100%);
+  background: rgb(12,1,106);
+  background: linear-gradient(117deg, rgba(12,1,106,1) 0%, rgba(26,9,205,1) 100%);
 }
 
 /* Dropdown menu background color*/
 .navbar-nav > li > .dropdown-menu {
-  background: rgb(167,1,1); 
-  background: linear-gradient(45deg, rgba(167,1,1,1) 0%, rgba(247,6,4,1) 100%);
+  background: rgb(12,1,106);
+  background: linear-gradient(117deg, rgba(12,1,106,1) 0%, rgba(26,9,205,1) 100%);
+  border: 0px;
 }
 
 /* Dropdown menu item text colour*/
@@ -61,8 +62,7 @@
  /* Dropdown menu item text colour when hovered over*/
 .dropdown-menu .dropdown-item:hover {
   color: rgba(255, 255, 255, 0.75);
-  background: rgb(167,1,1); 
-  background: linear-gradient(45deg, rgba(167,1,1,1) 0%, rgba(247,6,4,1) 100%);
+  background-color: rgba(0, 0, 0, 0);
  }
 
 /* Dynamic Hamburger Icon */
